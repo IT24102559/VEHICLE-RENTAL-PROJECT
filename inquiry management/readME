@@ -1,0 +1,64 @@
+🚗 Vehicle Rental System – Inquiry Management Module
+📘 Overview
+
+The Inquiry Management Module is a core feature of the Vehicle Rental System that allows customers to submit questions, issues related to vehicles, bookings, or general services.
+Admins can view, respond to, and manage these inquiries efficiently through the backend interface.
+
+🧩 Features
+🧑‍💻 User Side
+
+Submit inquiries or feedback through a form.
+
+View the status of submitted inquiries.
+
+Receive admin responses or updates.
+
+🛠️ Admin Side
+
+View all inquiries submitted by customers.
+
+Respond to customer inquiries.
+
+Update inquiry status (e.g., Pending, In Progress, Resolved).
+
+Delete outdated or resolved inquiries.
+
+🧱 Database Structure
+
+Table Name: inquiries
+
+Column Name	Data Type	Description
+id	BIGINT (PK)	Unique ID for each inquiry
+title	VARCHAR(255)	Inquiry subject/title
+description	TEXT	Detailed description from the user
+status	VARCHAR(50)	Inquiry status (Pending, Resolved)
+created_at	DATETIME	Date when the inquiry was created
+updated_at	DATETIME	Last update timestamp
+respond TEXT Respond from admin
+user_id	BIGINT (FK)	Linked to the user who made inquiry
+
+⚙️ Technologies Used
+
+Backend: Java, Spring Boot
+
+Database: MySQL
+
+Frontend: HTML, CSS, Java script
+
+Build Tool: Maven
+
+🧰 Validations
+
+Title: Required to be a title(cannot be empty).
+
+Description: Required, cannot be empty.
+
+Status: Defaults to "Pending" upon creation.
+
+
+👨‍💻 Author
+
+Project: Vehicle Rental System – Inquiry Management
+Developed by: [IT24102453]
+Version: 1.0.0
+October 2025
