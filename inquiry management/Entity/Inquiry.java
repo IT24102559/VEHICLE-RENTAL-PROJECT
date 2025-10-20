@@ -39,7 +39,8 @@ public class inquiry {
     private LocalDateTime respondedAt;
 
     @Column(name = "responded_by")
-    private String respondedBy; // Admin username who responded
+    private String respondedBy; 
+    // Admin username who responded to inquiries
 
     public enum InquiryStatus {
         PENDING,
