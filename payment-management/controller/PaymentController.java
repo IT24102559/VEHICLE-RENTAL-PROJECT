@@ -148,8 +148,10 @@ public class PaymentController {
         return ResponseEntity.ok(payments);
     }
     
-    
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deletePayment(@PathVariable Long id) {
+        paymentService.deletePayment(id);
+        return ResponseEntity.ok("Payment deleted successfully");
     }
 }
-
 
