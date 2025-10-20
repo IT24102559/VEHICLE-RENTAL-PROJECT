@@ -31,7 +31,7 @@ public class feedbackcontroller {
 	@PostMapping
 	public ResponseEntity<?> create(@RequestBody feedback f, HttpSession session) { 
 		try {
-			String username = (String) session.getAttribute("username");
+			String username = (String) session.getAttribute("username");//error handling
 			if (username == null || username.trim().isEmpty()) {
 				return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
 						.body(Map.of("status", "error", "message", "User must be logged in"));
