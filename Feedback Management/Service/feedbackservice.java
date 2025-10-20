@@ -55,7 +55,7 @@ public class feedbackservice {
 			return false;
 		}
 		
-		// Admins can modify any feedback
+		
 		if ("Admin".equals(userRole) || "super-admin".equals(userRole) || "vehicle-admin".equals(userRole)) {
 			return true;
 		}
